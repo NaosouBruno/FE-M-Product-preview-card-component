@@ -1,0 +1,112 @@
+.card {
+  width: 75%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+}
+.card-descriptionProduct {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px 0px 15px 15px;
+  width: 100%;
+}
+
+.card-imgProductMobile {
+  border-radius: 20px 20px 0px 0px;
+}
+.card-imgProductDesktop {
+  display: none;
+}
+.card-bodyContainer {
+  margin: 20px;
+  align-self: flex-end;
+}
+.card-nameProduct {
+  font: 0.8em sans-serif;
+}
+.card-authorProduct {
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+.card-prices {
+  margin-top: 50px;
+}
+.card-pricePromotion {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+}
+.card-odlPrice {
+  margin-left: 25px;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.card-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.card-buy {
+  background-color: hsl(158, 36%, 37%);
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card-buy__title {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .card-descriptionProduct {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 15px 15px 0px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-imgProductMobile {
+    display: none;
+  }
+
+  .card-imgProductDesktop {
+    border-radius: 15px 0px 0px 15px;
+    width: 500px;
+    display: block;
+  }
+  .card-bodyContainer {
+    margin: 20px;
+    align-self: flex-end;
+  }
+  .card-nameProduct {
+    font-size: 18px;
+  }
+  .card-authorProduct {
+    font-size: 45px;
+  }
+
+  .card-buy__title {
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
